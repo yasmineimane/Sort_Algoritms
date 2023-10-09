@@ -26,6 +26,8 @@ int main(void)
 		selectionSort(arr, size);
 	else if (choice == 2)
 		insertionSort(arr, size);
+	else if (choice == 3)
+		bubbleSort(arr, size);
 
 	print_array(arr, size);
 
