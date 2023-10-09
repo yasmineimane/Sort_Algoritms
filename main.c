@@ -15,13 +15,18 @@ int main(void)
 
 	arr = create_array(size);
 
-	printf("if u want to use selection sort press 1 : ");
+	printf("Please Make a Choice \n");
+	printf("    1_Selection Sort    \n");
+	printf("    2_Insertion Sort    \n");
+	printf("    3_Bubble Sort    \n");
+	printf("Your Choice : ");
 	scanf("%d", &choice);
 
 	if (choice == 1)
-	{
 		selectionSort(arr, size);
-	}
+	else if (choice == 2)
+		insertionSort(arr, size);
+
 	print_array(arr, size);
 
 	return (0);
